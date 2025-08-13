@@ -22,7 +22,7 @@ pipeline {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
             }
-        }
+        }
     }
 }
 

@@ -14,5 +14,10 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        stage('Archive Artifact'){
+            steps{
+                archiveArtifacts artifacts:'target/*.jar', fingerprint:true
+            }
+        }
     }
 }

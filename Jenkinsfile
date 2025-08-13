@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
         stage('Archive Artifact'){
